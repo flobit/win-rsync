@@ -18,7 +18,7 @@ os.environ["CWRSYNCHOME"] = launcher_file_dir
 
 rsync_final_params=str.join(" ",[ trans_param(arg) for arg in sys.argv[1:]])
 
-print(rsync_final_params)
-print(launcher_file_dir)
+# print(rsync_final_params)
+# print(launcher_file_dir)
 
 os.system("real_rsync "+rsync_final_params)
